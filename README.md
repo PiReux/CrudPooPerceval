@@ -75,7 +75,7 @@ Il te reste donc à réaliser ce que l'on appelle le CRUD, les actions pour Crea
 1. Charge la base de donnée présente dans le dossier bdd
   - Via le terminal, déplace toi dans le dossier bdd, puis execute la commande suivante: `mysql < checkpoint-1-26_09_2017.sql -u your_mysql_username -p`.  
   Grâce à la commande précédente, tu va importer une bdd avec un jeu de donnée à l'intérieur, cela va te pemettre de démarrer plus sereinement la réalisation de ton CRUD. Pour info, la base de donnée se nomme "checkpoint-1-26/09/2017".
-2. Etape 2: Visualiser les citations depuis la page d'accueil
+2. Etape 2: Visualiser les citations depuis la page d'accueil: supprime les données qui sont en "dur" dans le code sur la page index.php, et remplace les par les données que tu aura récupéré de la base de donnée (garde le même design)
 3. Etape 3: Ajouter un citation via le formulaire créé ci-dessus
 4. Etape 4: Supprimer une citation via le bouton delete situé sous chaque citation
 5. Etape 5: Editer un article via le bouton edit situé sous chaque citation  
