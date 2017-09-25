@@ -38,7 +38,7 @@ Une fois le travail effectué, tu pousseras uniquement cette branche **sur le re
      - Un champ pour le chapitre dans lequel la citation est présente
      - Un champ pour la date d'ajout de la citation (en bonus la date sera définie automatiquement lors de la création)
      - En bonus: Un champ file permettant d'uploader une image (le moment où le personnage prononce la citation dans l'épisode)
- - En bonuse, page édition de citation:
+ - En bonus, page édition de citation:
    - Formulaire avec les mêmes champs que celui d'ajout mais permettant de mettre à jour une citation
 
 **Une fois le travail réalisé, fait un commit**
