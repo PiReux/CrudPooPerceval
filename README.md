@@ -4,42 +4,42 @@ PHP - 4h
 
 #### Kézako ?
 
-- Une site en html/css dans lequel certain élément manque
+- Un site en html/css dans lequel certains éléments sont manquant
 - Le site à été réalisé à l'aide du framework css/js Bootstrap
-- Lis bien chaque étape entierement avant de te lancer dans la réalisation de cette dernière
+- Lis bien tout le sujet dans sa globalité, puis chaque étape **attentivement** avant de te lancer dans la réalisation de chacune d'elles.
 
 #### Contenu
 
-- Un dossier css comprenant la feuille de style du projet
-- Un dossier font dans lequel se trouve la font folkard_.ttf
-- Un dossier vendor dans lequel se trouve les fichiers du framework bootstrap (tu ne dois pas toucher à ce dossier, juste l'utiliser)
-- Un dossier image (avec les images :-))
-- Un gitignore permettant (dans le cas présent) d'ignorer le fichier .DS_Store qui est un fichier de conf spécifique aux mac (si tu as d'autre chose à ignorer par git, n'hesite pas à l'utiliser ;-))
-- Un dossier bdd avec la base de donnée que tu devra utiliser à l'étape 4
-- Un fichier index.html, template du site
-- Un fichier README.md (ce que tu es en train de lire en fait)
+- Un dossier *css* comprenant la feuille de style du projet
+- Un dossier *font* dans lequel se trouve la font folkard_.ttf
+- Un dossier *vendor* dans lequel se trouve les fichiers du framework bootstrap (tu ne dois pas toucher à ce dossier, juste l'utiliser)
+- Un dossier *image* (avec les images :-))
+- Un fichier *gitignore* permettant (dans le cas présent) d'ignorer le fichier *.DS_Store* qui est un fichier de conf spécifique aux mac (si tu as d'autre chose à ignorer par git, n'hesite pas à l'utiliser ;-))
+- Un dossier *bdd* avec la base de donnée que tu devra utiliser à l'étape 4
+- Un fichier *index.html*, template du site
+- Un fichier *README.md* (ce que tu es en train de lire en fait)
 
 ## Etape 1
-Une fois le dépôt cloné, crées toi une branche sur git portant ton nom, c'est sur cette dernière que tu travailleras.
-Une fois le travail effectué tu pousseras ton travail dessus
+Une fois le dépôt cloné, **crée toi une branche locale sur git portant ton nom**, c'est sur cette dernière que tu travailleras.
+Une fois le travail effectué, tu pousseras uniquement cette branche **sur le repository github du checkpoint**
 
 ## Etape 2 - Intégration
 
-- Pour le moment (ba oui, tu vas bosser un peu quand même), le fichier index.html comporte un mini header ainsi qu'une liste d'articles saisis en dur dans le code.
- - Modifier la barre de navigation afin que l'on y retrouve:
+- Pour le moment (ba oui, tu vas bosser un peu quand même), le fichier *index.html* comporte un mini header ainsi qu'une liste d'articles saisis en dur dans le code.
+ - Modifier la barre de navigation afin que l'on y retrouve d'après la maquette se trouvant dans *img/maquette.png* :
    - Un logo placé à gauche qui sera un lien vers la page d'accueil
    - lien vers une page pour ajouter une citation (que tu vas devoir également créer)
- - Créer un footer avec (voir maquette ==> img/maquette.png):
-   - Icone des reseaux sociaux (twitter, facebook, github), pour cela utilise font awesome. Les icones devront être centrées au milieu du footer
- - Page d'ajout de citation:
-   - Formulaire avec:
+ - Créer un footer avec 
+   - Icône des reseaux sociaux (twitter, facebook, github), pour cela utilise font awesome. Les icônes devront être centrées au milieu du footer
+ - Créé également une page d'ajout de citations contenant :
+   - Un formulaire avec:
      - Un champ pour l'auteur de la citation
      - Un champ pour la citation
      - Un champ pour le chapitre dans lequel la citation est présente
      - Un champ pour la date d'ajout de la citation (en bonus la date sera définie automatiquement lors de la création)
      - En bonus: Un champ file permettant d'uploader une image (le moment où le personnage prononce la citation dans l'épisode)
- - Page édition de citation:
-   - Formulaire avec les mêmes champs que celui d'ajout de citation
+ - En bonus, page édition de citation:
+   - Formulaire avec les mêmes champs que celui d'ajout mais permettant de mettre à jour une citation
 
 **Une fois le travail réalisé, fait un commit**
 
@@ -72,15 +72,15 @@ Une fois le travail effectué tu pousseras ton travail dessus
    - Supprimer une citation ciblée  
 Il te reste donc à réaliser ce que l'on appelle le CRUD, les actions pour Create, Read, Update, et Delete une/des citation(s).
 
-1. Charge la base de donnée présente dans le dossier bdd
-   - Via le terminal, déplace toi dans le dossier bdd, puis execute la commande suivante: `mysql < checkpoint-1-26_09_2017.sql -u your_mysql_username -p`.  
-   Grâce à la commande précédente, tu va importer une bdd avec un jeu de donnée à l'intérieur, cela va te pemettre de démarrer plus sereinement la réalisation de ton CRUD. Pour info, la base de donnée se nomme "checkpoint-1-26/09/2017".
+1. Charge la base de données présente dans le dossier *bdd*
+   - Via le terminal, déplace toi dans le dossier *bdd*, puis execute la commande suivante: `mysql < checkpoint-1-26_09_2017.sql -u your_mysql_username -p`.  
+   Grâce à la commande précédente, tu va importer une bdd avec un jeu de donnée à l'intérieur, cela va te pemettre de démarrer plus sereinement la réalisation de ton CRUD. Pour info, la base de données se nomme "checkpoint-1-26/09/2017".
 2. Etape 2: Visualiser les citations depuis la page d'accueil
 3. Etape 3: Ajouter un citation via le formulaire créé ci-dessus
-4. Etape 4: Supprimer une citation via le bouton delete situé sous chaque citation
-5. Etape 5: Editer un article via le bouton edit situé sous chaque citation  
+4. Etape 4: Supprimer une citation via le bouton *delete* situé sous chaque citation
+5. Etape 5: Editer un article via le bouton *edit* situé sous chaque citation  
 
-Ton fichier de connexion à la base de données ne devra pas se trouver sur le dépôt
+Ton fichier de connexion à la base de données ne devra pas se trouver sur le dépôt.
 
 **Une fois le travail réalisé, fait un commit**
 
