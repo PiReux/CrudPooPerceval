@@ -1,4 +1,14 @@
 <?php
+require 'Database.php';
+require 'Citation.php';
+
+use wild\Citation;
+use wild\Database;
+$db= new Database('checkpoint-1-26/09/2017');
+$datas = new Citation ($_POST['author'],$_POST['chapter'],$_POST['content'],$_POST['date'],$_POST['image']);
+$res = $db->execute('INSERT INTO citation (author, chapter, content, date, image) VALUES($datas->getAuthor, $datas->getChapter, $datas->getContent, $datas->getDate, $datas->getImage)') ;
+
+
 ?>
 
 <!doctype html>
@@ -16,7 +26,7 @@
 <body>
 <?php include 'navbar.php'; ?>
 <div class="container">
-    <form method="post" role="form">
+    <form method="post" role="form" action="add.php">
         <legend>Rajouter une citation</legend>
         <div class="form-group">
             <label for="author">Auteur de la citation</label>

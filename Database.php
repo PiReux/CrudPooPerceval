@@ -1,4 +1,5 @@
 <?php
+
 namespace wild;
 
 use \PDO;
@@ -37,16 +38,22 @@ class Database
     public function getPdo()
     {
         if ($this->pdo === null) {
-            $pdo = new PDO('mysql:dbname=checkpoint-1-26/09/2017;host=localhost', 'wilder', 'jesaiscequejefais', array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
+            $pdo = new PDO('mysql:dbname=checkpoint-1-26/09/2017;host=localhost;charset=UTF8', 'wilder', 'jesaiscequejefais');
             $this->pdo = $pdo;
         }
         return $this->pdo = $pdo;
     }
 
-    public function query($statement)
+    public function display($statement)
     {
         $res = $this->getPdo()->query($statement);
         $datas = $res->fetchAll(PDO::FETCH_OBJ);
         return $datas;
+    }
+
+    public function execute($statement)
+    {
+        $res = $this->getPdo()->exec($statement);
+        return $res;
     }
 }

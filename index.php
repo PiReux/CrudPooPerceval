@@ -5,7 +5,7 @@ use wild\Database;
 
 $db = new Database('checkpoint-1-26/09/2017');
 
-$datas = $db->query('SELECT * FROM citation ');
+$datas = $db->display('SELECT * FROM citation ');
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html">
@@ -27,7 +27,7 @@ $datas = $db->query('SELECT * FROM citation ');
 
     <div class="kaamelott-banner jumbotron kaamelott-underline">
         <h1>C'EST PAS FAUX !</h1>
-        <p>Les meilleurs citations de la serie-TV Kaamelott</p>
+        <p>Les meilleures citations de la serie-TV Kaamelott</p>
     </div>
 
     <section class="row citationList">
