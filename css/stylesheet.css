@@ -13,12 +13,12 @@
 ==================================================
 \************************************************/
 @font-face {
-  font-family: 'Folkard';
-  src: url('../fonts/folkard_.ttf');
+    font-family: 'Folkard';
+    src: url('../fonts/folkard_.ttf');
 }
 
 .kaamelott-font {
-  font-family: 'Folkard';
+    font-family: 'Folkard';
 }
 
 /************************************************\
@@ -50,6 +50,7 @@
 .btn.btn-kaamelott:hover {
     background-color: #996f21;
 }
+
 /************************************************\
 ==================================================
 3. Quotes Header
@@ -57,15 +58,15 @@
 \************************************************/
 
 .kaamelott-underline {
-  border-bottom: solid 5px #a57824;
+    border-bottom: solid 5px #a57824;
 }
 
 .kaamelott-banner.jumbotron {
-  background-image: url('../img/kaamelott-banner.jpg');
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
+    background-image: url('../img/kaamelott-banner.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
 }
 
 /************************************************\
@@ -74,23 +75,26 @@
 ==================================================
 \************************************************/
 
-/* Your CSS here */
-/* Your CSS here */
-/* Your CSS here */
-/* Your CSS here */
-/* Your CSS here */
-/* Your CSS here */
-/* Your CSS here */
-/* Your CSS here */
-
+.uniqueCitation {
+    padding: 15px;
+    border-radius: 4px;
+}
+.contenu
+{
+    border: solid;
+    border-width: thin;
+    border-color: #5e5e5e;
+    border-radius: 4px;
+    padding: 5px;
+}
 /************************************************\
 ==================================================
 4. Footer
 ==================================================
 \************************************************/
 
-footer{
-  margin-bottom: 10px;
+footer {
+    margin-bottom: 10px;
 }
 
 footer ul {
